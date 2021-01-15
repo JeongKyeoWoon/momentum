@@ -13,7 +13,7 @@ function getWeather(lat, lng) {
         // 응답 상태 반환되면 실행
         const temperature = json.main.temp;
         const place = json.name;
-        weather.innerText = `${temperature} @ ${place}`;
+        weather.innerText = `${temperature}℃ \n${place}`;
     });
 }
 

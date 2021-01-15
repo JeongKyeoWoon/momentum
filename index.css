@@ -1,24 +1,38 @@
 body {
     background-color: #2c3e50;
-    color: white/* #34495e */;
+    color: white;
     text-align: center;
 }
 
-.btn {
-    cursor: pointer;
+input {background: none; border: 0; border-bottom: 2px solid white; color: white; font-size: 20px;}
+input::placeholder {color: white;}
+input:focus {outline: none;}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
-.form,
-.greetings {
-    display: none;
-}
+.js-clock h1 {font-size: 60px;}
 
-.showing {
-    display: block;
-}
+.js-form {}
+.form, .greetings {display: none;}
+
+.js-greetings{font-size: 30px;}
+
+.js-toDoList {list-style: none; padding: 0; margin: 0;}
+.js-toDoList button {cursor: pointer; background: none; border: none;}
+.js-toDoList li {font-size: 20px;}
+
+.js-weather {position: absolute; top: 0; right: 0; margin: 20px; font-size: 20px;}
+
+
+.showing {display: block;}
 
 @keyframes fadeIn{
-    form{
+    from {
         opacity: 0;
     } to {
         opacity: 1;
